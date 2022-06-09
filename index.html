@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Alessandro Bortolaso - Future Web Developer</title>
+<link rel="icon" type="image/x-icon" href="assets/img/icona.ico">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round|Raleway">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<style>
+body{
+	background: #eeeeee;
+	font-family: 'Varela Round', sans-serif;
+}
+.form-inline {
+	display: inline-block;
+}
+.navbar-header.col {
+	padding: 0 !important;
+}	
+.navbar {		
+	background: #fff;
+	padding-left: 16px;
+	padding-right: 16px;
+	border-bottom: 1px solid #d6d6d6;
+	box-shadow: 0 0 4px rgba(0,0,0,.1);
+}
+.nav-link {
+	margin: 0 5px;
+}
+.nav-link img {
+	border-radius: 50%;
+	width: 36px;
+	height: 36px;
+	margin: -8px 0;
+	float: left;
+	margin-right: 10px;
+}
+.navbar .navbar-brand {
+	color: #555;
+	padding-left: 0;
+	font-size: 20px;
+	padding-right: 50px;
+	font-family: 'Raleway', sans-serif;
+}
+.navbar .navbar-brand b {
+	font-weight: bold;
+	color: #6aaeeb;
+}
+.navbar .navbar-nav a:hover, .navbar .navbar-nav a:focus {
+	color: #6aaeeb !important;
+}
+.navbar .navbar-nav a.active, .navbar .navbar-nav a.active:hover {
+	color: #6aaeeb !important;
+	background: transparent !important;
+}
+.search-box {
+	position: relative;
+}	
+.search-box input.form-control {		
+	padding-right: 35px;
+	border-radius: 0;
+	padding-left: 0;
+	border-width: 0 0 1px 0;
+	box-shadow: none;
+}
+.search-box input.form-control:focus {		
+	border-color: #f08373;		
+}
+.search-box .input-group-text {
+	min-width: 35px;
+	border: none;
+	background: transparent;
+	position: absolute;
+	right: 0;
+	z-index: 9;
+	padding: 7px 0 7px 7px;
+	height: 100%;
+}
+.search-box i {
+	color: #a0a5b1;
+	font-size: 19px;
+}
+.navbar .nav-item i {
+	font-size: 18px;
+}
+.navbar .dropdown-item i {
+	font-size: 16px;
+	min-width: 22px;
+}
+.navbar .nav-item.show > a {
+	background: none !important;
+}
+.navbar .dropdown-menu {
+	border-radius: 1px;
+	border-color: #e5e5e5;
+	box-shadow: 0 2px 8px rgba(0,0,0,.05);
+}
+.navbar .dropdown-menu a {
+	color: #777;
+	padding: 8px 20px;
+	line-height: normal;
+	font-size: 15px;
+}
+.navbar .navbar-form {
+	margin-right: 0;
+	margin-left: 0;
+	border: 0;
+}
+@media (min-width: 992px){
+	.form-inline .input-group {
+		width: 250px;
+		margin-right: 30px;
+	}
+}
+@media (max-width: 991px){
+	.form-inline {
+		display: block;
+		margin-bottom: 10px;
+		margin-top: 0;
+	}
+	.input-group {
+		width: 100%;
+	}
+}
+.body-container {
+    flex-wrap: wrap;
+    display: flex;
+  }
+.body {
+    align-items: center;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center; 
+    background-image: linear-gradient(to  right, #FFFFFF 0%, #6aaeeb 100%);
+    flex-direction: column;
+    
+  }
+.NAME{
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    
+  }  
+.box-home-image{
+    height: auto;
+    width: auto;
+  } 
+  
+.nome{
+    font-size: 50px;
+    text-align: center; 
+    margin-top: 40px;
+  }
+#carousel-words{
+    text-align: center;
+  }
+.bio{
+    text-align: center;
+    margin-top: 30px;
+  }
+.body p{
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+.icon-skill img{
+    justify-content: center;
+  }
+.project{
+    margin-top: 50px;
+  }
+.form-row{
+    justify-content: center;
+
+  }
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+    cursor: pointer;
+}
+.footer-email{
+  align-items: center;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center; 
+    flex-direction: column;
+    margin-top: 50px;
+}
+.footer-social{
+  align-items: center;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around; 
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+</style>
+</head> 
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light">
+	  <a class="navbar-brand" >Alessandro</a>  		
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+		  <span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div id="navbarCollapse" class="collapse navbar-collapse justify-content-start">
+		  <div class="navbar-nav">
+			  <a href="#me" class="nav-item nav-link">Io</a>		
+			  <a href="#Progetti" class="nav-item nav-link">Skill</a>
+			  <a href="#Skill" class="nav-item nav-link">Progetti</a>
+			  <a href="#Contatti" class="nav-item nav-link">Contatti</a>
+      </div>
+            <!--social-->
+      <div class="navbar-nav ml-auto">
+        
+			<a href="https://www.facebook.com/alessandro.bortolaso.3" class="nav-item nav-link"><i class="fa fa-facebook"></i></a>
+			<a href="https://www.instagram.com/alessandro_bortolaso/" class="nav-item nav-link"><i class="fa fa-instagram"></i></a>
+      <a href="https://it.linkedin.com/in/alessandro-bortolaso-72ab061b9?trk=people-guest_people_search-card" class="nav-item nav-link"><i class="fa fa-linkedin"></i></a>
+      <a href="https://github.com/alenorton98" class="nav-item nav-link"><i class="fa fa-github"></i></a>
+      </div>		
+	  </div>
+  </nav>
+
+  <div class="body-container">
+    <div class="body">
+<!--contenitore con nome e carosello home-->        
+      <div class="name">
+      <p class="nome"><span class="badge rounded-pill bg-light text-dark">Alessandro Bortolaso</span></p>
+      <section class="presentazione">     
+        <h6 id="carousel-words">Vivo di</h6>
+        <script src="assets/javascript.js"></script>
+      </section>
+      </div>
+    <!--contenitore foto home-->
+    <div class="m-4">
+    <div class="box-home-image">
+      <img src="assets/img/foto profilo.jpeg" class="rounded" style="max-width: 200px;">
+    </div>
+    </div>
+  
+    <div class="bio">
+    <a name="Me"></a>
+    <h3 class ="about-me" ><span class="badge rounded-pill bg-light text-dark">- Su di me -</span></h3>
+      <p>
+        <br>
+        <br>
+        Sono <strong>Alessandro</strong>, un ragazzo di 24 anni che vive in un paese a metà fra la città e la campagna in provincia di Torino.
+        <br>
+        <br>
+        Sono uno studente di economia e mi piace tutto ciò che riguarda i numeri, l'economia in tutti i campi.
+        <br>
+        <br>
+        Il percorso di studi che ho seguito mi ha permesso di sviluppare competenze in ambito fiscale-economico e un certa familiarità con l'uso del computer e di vari software.
+        <br>
+        <br>
+        Ho maturate anche diverse esperienze lavorative che mi hanno aiutato a comprendere l'importanza che di conoscere il mondo dei software.
+        <br>
+        <br>
+        Questo è ciò che mi ha fatto decidere di iniziare ad avvicinarmi all'idea di un lavoro online e più direttamente al mondo della programmazione.
+        <br>
+        <br>
+        Al momento sono in grado creare siti semplici basati su HTML, CSS e Bootstrap ma conto ben presto di acquisire competenze che mi permettano di creare siti web e software complessi. 
+        <br>
+        <br>
+      </p>
+    </div>
+       <a name="Skill"></a>
+         <h3  class="skill"><span class="badge rounded-pill bg-light text-dark">- Le mie Skill -</span></h3>
+        <br>
+        <br>
+    <div class="icon-skill">
+    
+    <img src="/assets/img/html5.png" class="rounded" style="max-width: 200px;" >
+    <img src="/assets/img/css3.png" class="rounded" style="max-width: 190px;">
+    <img src="/assets/img/bootstrap-256.png" class="rounded" style="max-width: 200px;">
+    <img src="/assets/img/wordpress.png" class="rounded" style="max-width: 190px;">
+    <img src="/assets/img/prestashop.png" class="rounded" style="max-width: 200px;">
+    <img src="/assets/img/shopify.png" class="rounded" style="max-width: 200px;">
+    </div>
+  
+    <a name="Progetti"></a>
+  <!--carta progetti-->
+  <h3 class="project"><span class="badge rounded-pill bg-light text-dark">- I miei progetti - </span></h3>
+  <div class="cards">
+  <div class="m-4">
+    <div class="card" style="width: 300px;">
+        <div class="card-body text-center">
+            <h5 class="card-title"><ins>Mio sito</ins></h5>
+            <p class="card-text">Questo è il primo progetto che ho creato per start2Impact, è il sito che stai guardando.
+              l'ho progettato tramite <strong>Bootstrap</strong>, <strong>  HTML</strong> e <strong>CSS</strong>.
+            </p>
+        </div>
+        <img src="/assets/img/portfolio.png" class="card-img-top">
+    </div>
+
+    
+</div>
+
+  <div class="m-4">
+    <div class="card" style="width: 300px;">
+        
+        <div class="card-body text-center " >
+            <h5 class="card-title"><ins>Prossimamente</ins></h5>
+            <p class="card-text">
+              Non ho altri progetti da mostrare al momento, ma non vedo l'ora di tappezzare questio mio sito con progetti nuovi e sempre più avanzati.
+            </p>
+        </div>
+        <img src="/assets/img/PROSSIMAMENTE.png" class="card-img-top">
+    </div>
+</div>
+</div>
+
+<a name="Contatti"></a>
+<div class="container text-center pt-3 pb-5">
+  <h1 id="contact-title" class="animate__animated title animate__fadeIn"><span class="badge rounded-pill bg-light text-dark">Contattami</span></h1>
+  <br>
+  <p>
+    Se sei interessato a quello che faccio o e vuoi scambiare due chiacchiere con me, complila i form qui sotto con i tuoi dati!
+  </p>
+  <div class="row justify-content-center">
+    <div class="col-md-10 col-lg-7">
+      <form id="contact-form" action="" method="post" role="form" class="animate__animated contactForm pt-5 animate__fadeIn">
+        <div class="form-row">
+        <div class="form-group col-md-6">
+          <input type="text" class="form-control" id="nome" name="nome" data-rule="required" data-msg="Inserisci il tuo nome" placeholder="Il tuo nome">
+          <div class="validation"></div>
+        </div>
+        <div class="form-group col-md-6">
+          <input type="tel" class="form-control" id="cellulare" name="cellulare" placeholder="Il tuo cellulare">
+          <div class="validation"></div>
+        </div>
+        </div>
+        <div class="form-group">
+          <input type="email" class="form-control" id="email" name="email" data-rule="email" data-msg="Inserisci una email valida" placeholder="La tua email">
+          <div class="validation"></div>
+        </div>
+        <div class="form-group">
+        <textarea class="form-control" rows="6" id="messaggio" name="messaggio" data-rule="required" data-msg="Per favore, scrivi qualcosa" placeholder="Il tuo messaggio"></textarea>
+        <div class="validation"></div>
+      </div>
+      <div class="form-row">
+      <button type="submit" class="btn btn-light btn-block" method="get">
+        <a href=index.html>Invia</a></button>
+      </div>
+    </form>
+    </div>
+  </div>
+</div>
+
+<div class="container footer border-top">
+  <!-- Footer email -->
+  <div class="footer-email">
+      <a href="mailto:alessandrobortolaso98@gmail.com">alessandrobortolaso98@gmail.com</a>
+  </div>
+
+  <!-- icone social footer -->
+  <div class="footer-social">
+      <a href="https://www.facebook.com/alessandro.bortolaso.3" target="_blank"><i class="fa fa-facebook"></i></a>
+      <a href="https://www.instagram.com/alessandro_bortolaso/" target="_blank"><i class="fa fa-instagram"></i></a>
+      <a href="https://it.linkedin.com/in/alessandro-bortolaso-72ab061b9?trk=people-guest_people_search-card" target="_blank"><i class="fa fa-linkedin"></i></a>
+      <a href="https://github.com/alenorton98" target="_blank"><i class="fa fa-github"></i></a>
+  </div>
+</div>
+</div>
+</div>
+</div>
+ </body>
+</html>                            
